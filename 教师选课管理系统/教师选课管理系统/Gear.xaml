@@ -1,0 +1,1617 @@
+﻿<UserControl x:Class="教师选课管理系统.Gear"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="534" d:DesignWidth="950">
+    <UserControl.Resources>
+        <Storyboard x:Key="C1" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S1_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="240.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="210.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="180.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12" Value="150.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="120.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14" Value="90.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="60.42"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.21"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--C1 Above-->
+        <Storyboard x:Key="C2" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S2_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C2_9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3345" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.669" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.338" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6725" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.3345" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.669" Value="-120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.0035" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.338" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.6725" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--C2 Above-->
+        <Storyboard x:Key="C3" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="S3_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].Angle" Storyboard.TargetName="C3_9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.834375" Value="30"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.66875" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.503125" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.3375" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.171875" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.00625" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.840625" Value="210"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.675" Value="240"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.509375" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.007" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="287.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.834375" Value="257.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.66875" Value="227.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.503125" Value="197.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:12.3375" Value="167.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13.171875" Value="137.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.00625" Value="107.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:14.840625" Value="77.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:15.675" Value="47.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:16.509375" Value="17.89213483146067415730337078652"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:17.007" Value="0.000000000000000000000000000003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.000000000000000000000000000003"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <!--C3 Above-->
+    </UserControl.Resources>
+
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource C1}"/>
+            <BeginStoryboard Storyboard="{StaticResource C2}"/>
+            <BeginStoryboard Storyboard="{StaticResource C3}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid>
+        <Button Background="Transparent" Margin="401,94,236,272">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S3_1" Source="Image\Symbol\Symbol3.png" Opacity="0" Stretch="Fill" HorizontalAlignment="Left" Height="32" Width="93" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="392,94,245,272">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S3" Source="Image\Symbol\Symbol3.png" Stretch="Fill" HorizontalAlignment="Left" Height="32" Width="93" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--S3-->
+        <Button Background="Transparent" Margin="302,240,335,123">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S2_1" Source="Image\Symbol\Symbol2.png" Opacity="0" Stretch="Fill" HorizontalAlignment="Left" Height="56" Width="146" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="312,240,325,126">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S2" Source="Image\Symbol\Symbol2.png" Stretch="Fill" HorizontalAlignment="Left" Height="56" Width="146" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--S2-->
+        <Button Background="Transparent" Margin="214,123,423,240">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S1_1" Source="Image\Symbol\Symbol1.png" Opacity="0" Stretch="Fill" HorizontalAlignment="Left" Height="121" Width="123" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="207,123,430,240">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="S1" Source="Image\Symbol\Symbol1.png" Stretch="Fill" HorizontalAlignment="Left" Height="121" Width="123" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--S1-->
+        <Button Background="Transparent" Margin="319,155,485,208">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_9" Opacity="0.1" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Button Background="Transparent" Margin="316,152,488,211">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_8" Opacity="0.2" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="313,149,491,214">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_7" Opacity="0.3" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="310,146,494,217">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_6" Opacity="0.4" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="307,143,497,220">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_5" Opacity="0.5" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="304,140,500,223">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					BorderThickness="1"
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_4" Opacity="0.6" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="301,137,503,226">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					BorderThickness="1"
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_3" Opacity="0.7" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="299,134,505,229">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_2" Opacity="0.8" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="296,131,508,232">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1_1" Opacity="0.9" Source="Image_background\1_Shadow\1_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--C1 Shadow Above-->
+        <Button Background="Transparent" Margin="380,188,365,117" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_9" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.1" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="377,185,368,120" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_8" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.2" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="374,182,371,123" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_7" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.3" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="371,179,374,126" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_6" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.4" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Button Background="Transparent" Margin="368,176,377,129" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_5" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.5" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Button Background="Transparent" Margin="365,173,380,132" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_4" Source="Image_background/2_Shadow/2_shadow.png" Opacity="0.6" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133"  RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Button Background="Transparent" Margin="362,170,383,135" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_3" Source="Image_background/2_Shadow/2_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133" Opacity="0.7" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+        <Button Background="Transparent" Margin="359,167,386,138" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_2" Source="Image_background/2_Shadow/2_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133" Opacity="0.8" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+
+
+
+        <Button Background="Transparent" Margin="356,164,389,141" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2_1" Source="Image_background\2_Shadow\2_shadow.png" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133" Opacity="0.9" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--C2 Shadow Above-->
+        <Button Background="Transparent" Margin="473,133,273,172" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_9" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.1" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="470,130,276,175" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_8" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.2" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="467,127,279,178" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_7" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.3" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="465,124,281,181" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_6" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.4" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="462,121,284,184" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_5" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.5" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="459,118,287,187" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_4" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.6" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="458,115,288,190" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_3" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.7" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="455,112,291,193" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border"  
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_2" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.8" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="452,109,294,196" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border"  
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3_1" Source="Image_background\3_Shadow\3_shadow.png" Opacity="0.9" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <!--C3 Shadow Above-->
+        <Button Background="Transparent" Margin="449,106,297,199" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.181"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C3" Source="Image_background\3.png" Stretch="Fill" HorizontalAlignment="Left" Height="88" Width="87" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="353,161,392,144" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border"  
+                		Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.614"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image x:Name="C2" Source="Image_background\2.png" Stretch="Fill" HorizontalAlignment="Left" Height="132" Width="133" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Background="Transparent" Margin="293,128,511,235">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" 
+    					Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                </ControlTemplate>
+            </Button.Template>
+            <Image x:Name="C1" Source="Image_background\1.png" Stretch="Fill" HorizontalAlignment="Left" Height="105" Width="106" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="36" Width="101" Margin="195,94,0,0" VerticalAlignment="Top" Source="Image/IDEA.png"/>
+        <Image HorizontalAlignment="Left" Height="17" Width="110" Margin="635,140,0,0" VerticalAlignment="Top" Source="Image/SUSPICION.png"/>
+        <Image HorizontalAlignment="Left" Height="24" Width="169" Margin="136,296,0,0" VerticalAlignment="Top" Source="Image/RELIZATION.png"/>
+    </Grid>
+</UserControl>

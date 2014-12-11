@@ -1,0 +1,11 @@
+﻿<Application x:Class="教师选课管理系统.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             ShutdownMode="OnExplicitShutdown" Startup="Login">
+    <!--ShutdownMode默認為OnMainWindowClose,若想手工shutdown則須設置成OnExplicitShutdown-->
+            
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

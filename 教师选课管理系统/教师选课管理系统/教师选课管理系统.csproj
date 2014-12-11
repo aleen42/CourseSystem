@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0B8C42D-C881-48C3-BB2A-48AC3C98C379}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>教师选课管理系统</RootNamespace>
+    <AssemblyName>教师选课管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FlashControl\bin\Debug\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashLoading.xaml.cs">
+      <DependentUpon>FlashLoading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gear.xaml.cs">
+      <DependentUpon>Gear.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson_table.xaml.cs">
+      <DependentUpon>Lesson_table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.xaml.cs">
+      <DependentUpon>Loading.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Message_Exit.xaml.cs">
+      <DependentUpon>Message_Exit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Message_register.xaml.cs">
+      <DependentUpon>Message_register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Query.xaml.cs">
+      <DependentUpon>Query.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Table.xaml.cs">
+      <DependentUpon>Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wrong1.xaml.cs">
+      <DependentUpon>wrong1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wrong2.xaml.cs">
+      <DependentUpon>wrong2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wrong3.xaml.cs">
+      <DependentUpon>wrong3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wrong_absent.xaml.cs">
+      <DependentUpon>wrong_absent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wrong_present.xaml.cs">
+      <DependentUpon>wrong_present.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FlashLoading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gear.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lesson_table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Loading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Message_Exit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Message_register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Messasge_Congradulation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MetroProBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Query.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wrong1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wrong2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wrong3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wrong_absent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wrong_present.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Messasge_Congradulation.xaml.cs">
+      <DependentUpon>Messasge_Congradulation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MetroProBar.xaml.cs">
+      <DependentUpon>MetroProBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Txt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Congradulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\lips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_background\1.png" />
+    <Resource Include="Image_background\2.png" />
+    <Resource Include="Image_background\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_background\2_Shadow\2_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_background\1_Shadow\1_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_background\3_Shadow\3_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Symbol\Symbol1.png" />
+    <Resource Include="Image\Symbol\Symbol2.png" />
+    <Resource Include="Image\Symbol\Symbol3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\login.png" />
+    <Resource Include="Image\registersuccessfully.png" />
+    <Resource Include="Image\existed.png" />
+    <Resource Include="Image\notexisted.png" />
+    <Resource Include="Image\nochance.png" />
+    <Resource Include="Image\1times.png" />
+    <Resource Include="Image\2times.png" />
+    <Resource Include="Image\3times.png" />
+    <Resource Include="Image\congradulationbackground.png" />
+    <Resource Include="Image\1.png" />
+    <Resource Include="Image\Icon\Maxmize_icon.png" />
+    <Resource Include="Image\Icon\Close_icon.png" />
+    <Resource Include="Image\1.jpg" />
+    <Resource Include="Image_background\system.png" />
+    <Resource Include="Image_background\TEACHER.png" />
+    <Resource Include="Image\IDEA.png" />
+    <Resource Include="Image\RELIZATION.png" />
+    <Resource Include="Image\SUSPICION.png" />
+    <Resource Include="Image\LOGO_shadow.png" />
+    <Resource Include="Image\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Flash\NumberLoading.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music\Nekodex - Welcome to osu!.wav" />
+    <Resource Include="Image_background\MainwindowBackground.png" />
+    <Resource Include="Image\close.png" />
+    <Resource Include="Image\min.png" />
+    <Resource Include="Image_background\background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

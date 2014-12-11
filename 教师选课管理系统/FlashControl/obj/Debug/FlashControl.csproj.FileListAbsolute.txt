@@ -1,0 +1,11 @@
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\bin\Debug\FlashControl.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\bin\Debug\FlashControl.pdb
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\bin\Debug\Interop.ShockwaveFlashObjects.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\Interop.ShockwaveFlashObjects.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\FlashControl.csproj.ResolveComReference.cache
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\FlashControl.UserControl1.resources
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\FlashControl.csproj.GenerateResource.Cache
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\FlashControl.dll
+F:\School\Programing\WPF programing\教师选课管理系统\FlashControl\obj\Debug\FlashControl.pdb
