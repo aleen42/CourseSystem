@@ -27,7 +27,7 @@ namespace 教师选课管理系统
         {
             InitializeComponent();
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            System.Media.SoundPlayer Audio = new System.Media.SoundPlayer(@"F:\School\Programing\WPF programing\CourseSystem\教师选课管理系统\Nekodex - Welcome to osu!.wav");
+            System.Media.SoundPlayer Audio = new System.Media.SoundPlayer(@"F:\School\Programing\WPF programing\教师选课管理系统\教师选课管理系统\Music\Nekodex - Welcome to osu!.wav");
             Audio.Play();
         }
 
@@ -69,5 +69,3 @@ namespace 教师选课管理系统
         }
     }
 }
-
-
